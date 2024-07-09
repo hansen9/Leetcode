@@ -19,9 +19,9 @@ public:
         //hard solution - combinatiorial
         int res = 0;
         for(auto n : nums){
-            res = res | n;
+            res = res | n; // here the bit is bitwise OR the numbs[i] together
         }
-        return res * pow(2, nums.size() -1);
+        return res * pow(2, nums.size() -1); // then shift it(<<) or power it to 2 to the power of nums.size() -1
     }
     private:
     int dfs(vector<int>& nums, int index, int currXor){
