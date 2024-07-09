@@ -12,6 +12,7 @@ struct ListNode {
 class Solution {
 public:
     ListNode* removeElements(ListNode* head, int val) {
+        // recursive method :)
         if(head == NULL) return NULL;
 
         if(head->val == val) return removeElements(head->next, val);
